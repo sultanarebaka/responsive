@@ -9,17 +9,16 @@
 }
 
 header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 200px;
-  transition: 0.5s ease;
   z-index:999;
   position: absolute;
   top:0;
   left:0;
   width:100%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
 }
 header .brand{
   color:#000;
@@ -31,6 +30,19 @@ header .brand{
 
 header .navigation {
   position: relative;
+}
+header .navigation .active .navigation-items{
+background: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+width:600px;
+max-width: 600px;
+margin: 20px;
+padding: 40px;
+border-radius: 5px;
+box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+
 }
 
 header .navigation .navigation-items a{
@@ -61,21 +73,20 @@ section{
 padding: 100px 200px;
 }
 .home{
+position: relative;
+width: 100%;
+min-height: 100vh;
 display: flex;
 justify-content: center;
 flex-direction: column;
 background-color: aqua;
-position: relative;
-width: 100%;
-min-height: 100vh;
-
 
 }
 .home .content{
-width:70%;
-margin-top:50px;
 z-index: 888;
 color:#fff;
+width:70%;
+margin-top:50px;
 
 }
 .home .content h1{
@@ -107,13 +118,12 @@ border-radius: 2px;
 }
 
 .home .media-icons{
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s ease; 
-    z-index:888;
-    position: absolute;
-    right:30px;
-
+z-index:888;
+position: absolute;
+right:30px;
+display: flex;
+flex-direction: column;
+transition: 0.5s ease;
 }
 
 .home .media-icons a{
@@ -154,5 +164,13 @@ width: 40px;
 height:40px;
 cursor: pointer;
 transition: 0.3s ease;
+}
+
+.menu-btn .active{
+background-position: center;
+background-size: 25px;
+background: no-repeat;
+transition: 0.3s ease;
+z-index:999;
 }
 
